@@ -32,6 +32,14 @@ class Shape
         Console.WriteLine("Height is " + _height);
     }
 
+    public void DisplayCentre()
+    {
+        _x = 50f;
+        _y = 50f;
+        Console.WriteLine($"The shape is now centred at x:{_x} and y:{_y} ");
+    }
+
+
     public bool IsAt(int xInput, int yInput)
     {
         return (xInput > _x && xInput < (_x + _width) &&
@@ -68,6 +76,8 @@ class Shape
         get { return _height; }
         set { _height = value; }
     }
+
+
 
 
 

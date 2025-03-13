@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Radium\\Desktop\\OOP\\Task_2.1\\Task_2.1.csproj": {}
+    "C:\\Users\\sk539\\Desktop\\OOP25\\OOP\\Task_2.1\\Task_2.1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Radium\\Desktop\\OOP\\Task_2.1\\Task_2.1.csproj": {
+    "C:\\Users\\sk539\\Desktop\\OOP25\\OOP\\Task_2.1\\Task_2.1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Radium\\Desktop\\OOP\\Task_2.1\\Task_2.1.csproj",
+        "projectUniqueName": "C:\\Users\\sk539\\Desktop\\OOP25\\OOP\\Task_2.1\\Task_2.1.csproj",
         "projectName": "Task_2.1",
-        "projectPath": "C:\\Users\\Radium\\Desktop\\OOP\\Task_2.1\\Task_2.1.csproj",
-        "packagesPath": "C:\\Users\\Radium\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Radium\\Desktop\\OOP\\Task_2.1\\obj\\",
+        "projectPath": "C:\\Users\\sk539\\Desktop\\OOP25\\OOP\\Task_2.1\\Task_2.1.csproj",
+        "packagesPath": "C:\\Users\\sk539\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\sk539\\Desktop\\OOP25\\OOP\\Task_2.1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Radium\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\sk539\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
