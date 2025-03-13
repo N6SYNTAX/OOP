@@ -1,0 +1,14 @@
+C:\Users\Radium\Desktop\OOP\Task_2.1\bin\Debug\net8.0\Task_2.1.exe
+C:\Users\Radium\Desktop\OOP\Task_2.1\bin\Debug\net8.0\Task_2.1.deps.json
+C:\Users\Radium\Desktop\OOP\Task_2.1\bin\Debug\net8.0\Task_2.1.runtimeconfig.json
+C:\Users\Radium\Desktop\OOP\Task_2.1\bin\Debug\net8.0\Task_2.1.dll
+C:\Users\Radium\Desktop\OOP\Task_2.1\bin\Debug\net8.0\Task_2.1.pdb
+C:\Users\Radium\Desktop\OOP\Task_2.1\obj\Debug\net8.0\Task_2.1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Radium\Desktop\OOP\Task_2.1\obj\Debug\net8.0\Task_2.1.AssemblyInfoInputs.cache
+C:\Users\Radium\Desktop\OOP\Task_2.1\obj\Debug\net8.0\Task_2.1.AssemblyInfo.cs
+C:\Users\Radium\Desktop\OOP\Task_2.1\obj\Debug\net8.0\Task_2.1.csproj.CoreCompileInputs.cache
+C:\Users\Radium\Desktop\OOP\Task_2.1\obj\Debug\net8.0\Task_2.1.dll
+C:\Users\Radium\Desktop\OOP\Task_2.1\obj\Debug\net8.0\refint\Task_2.1.dll
+C:\Users\Radium\Desktop\OOP\Task_2.1\obj\Debug\net8.0\Task_2.1.pdb
+C:\Users\Radium\Desktop\OOP\Task_2.1\obj\Debug\net8.0\Task_2.1.genruntimeconfig.cache
+C:\Users\Radium\Desktop\OOP\Task_2.1\obj\Debug\net8.0\ref\Task_2.1.dll
