@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Radium\\Desktop\\OOP\\Task_2.1\\Task_2.1.csproj",
+      "projectUniqueName": "C:\\Users\\Radium\\Desktop\\Uni\\OOP\\Task_2.1\\Task_2.1.csproj",
       "projectName": "Task_2.1",
-      "projectPath": "C:\\Users\\Radium\\Desktop\\OOP\\Task_2.1\\Task_2.1.csproj",
+      "projectPath": "C:\\Users\\Radium\\Desktop\\Uni\\OOP\\Task_2.1\\Task_2.1.csproj",
       "packagesPath": "C:\\Users\\Radium\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Radium\\Desktop\\OOP\\Task_2.1\\obj\\",
+      "outputPath": "C:\\Users\\Radium\\Desktop\\Uni\\OOP\\Task_2.1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Radium\\AppData\\Roaming\\NuGet\\NuGet.Config"
