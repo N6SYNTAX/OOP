@@ -1150,19 +1150,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\sk539\\.nuget\\packages\\": {}
+    "C:\\Users\\Radium\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\sk539\\Desktop\\OOP25\\OOP\\Task_3.1\\Task_3_1.Tests\\Task_3_1.Tests.csproj",
+      "projectUniqueName": "C:\\Users\\Radium\\Desktop\\Uni\\OOP\\Task_3.1\\Task_3_1.Tests\\Task_3_1.Tests.csproj",
       "projectName": "Task_3_1.Tests",
-      "projectPath": "C:\\Users\\sk539\\Desktop\\OOP25\\OOP\\Task_3.1\\Task_3_1.Tests\\Task_3_1.Tests.csproj",
-      "packagesPath": "C:\\Users\\sk539\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\sk539\\Desktop\\OOP25\\OOP\\Task_3.1\\Task_3_1.Tests\\obj\\",
+      "projectPath": "C:\\Users\\Radium\\Desktop\\Uni\\OOP\\Task_3.1\\Task_3_1.Tests\\Task_3_1.Tests.csproj",
+      "packagesPath": "C:\\Users\\Radium\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Radium\\Desktop\\Uni\\OOP\\Task_3.1\\Task_3_1.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\sk539\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Radium\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -1174,8 +1174,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\sk539\\Desktop\\OOP25\\OOP\\Task_3.1\\Task_3_1\\Task_3_1.csproj": {
-              "projectPath": "C:\\Users\\sk539\\Desktop\\OOP25\\OOP\\Task_3.1\\Task_3_1\\Task_3_1.csproj"
+            "C:\\Users\\Radium\\Desktop\\Uni\\OOP\\Task_3.1\\Task_3_1\\Task_3_1.csproj": {
+              "projectPath": "C:\\Users\\Radium\\Desktop\\Uni\\OOP\\Task_3.1\\Task_3_1\\Task_3_1.csproj"
             }
           }
         }

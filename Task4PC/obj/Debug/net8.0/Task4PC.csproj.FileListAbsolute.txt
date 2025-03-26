@@ -1,0 +1,15 @@
+C:\Users\Radium\Desktop\Uni\OOP\Task4PC\bin\Debug\net8.0\Task4PC.exe
+C:\Users\Radium\Desktop\Uni\OOP\Task4PC\bin\Debug\net8.0\Task4PC.deps.json
+C:\Users\Radium\Desktop\Uni\OOP\Task4PC\bin\Debug\net8.0\Task4PC.runtimeconfig.json
+C:\Users\Radium\Desktop\Uni\OOP\Task4PC\bin\Debug\net8.0\Task4PC.dll
+C:\Users\Radium\Desktop\Uni\OOP\Task4PC\bin\Debug\net8.0\Task4PC.pdb
+C:\Users\Radium\Desktop\Uni\OOP\Task4PC\obj\Debug\net8.0\Task4PC.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Radium\Desktop\Uni\OOP\Task4PC\obj\Debug\net8.0\Task4PC.AssemblyInfoInputs.cache
+C:\Users\Radium\Desktop\Uni\OOP\Task4PC\obj\Debug\net8.0\Task4PC.AssemblyInfo.cs
+C:\Users\Radium\Desktop\Uni\OOP\Task4PC\obj\Debug\net8.0\Task4PC.csproj.CoreCompileInputs.cache
+C:\Users\Radium\Desktop\Uni\OOP\Task4PC\obj\Debug\net8.0\Task4PC.sourcelink.json
+C:\Users\Radium\Desktop\Uni\OOP\Task4PC\obj\Debug\net8.0\Task4PC.dll
+C:\Users\Radium\Desktop\Uni\OOP\Task4PC\obj\Debug\net8.0\refint\Task4PC.dll
+C:\Users\Radium\Desktop\Uni\OOP\Task4PC\obj\Debug\net8.0\Task4PC.pdb
+C:\Users\Radium\Desktop\Uni\OOP\Task4PC\obj\Debug\net8.0\Task4PC.genruntimeconfig.cache
+C:\Users\Radium\Desktop\Uni\OOP\Task4PC\obj\Debug\net8.0\ref\Task4PC.dll
