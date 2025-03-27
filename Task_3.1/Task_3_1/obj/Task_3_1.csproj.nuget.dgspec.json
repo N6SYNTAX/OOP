@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Radium\\Desktop\\Uni\\OOP\\Task_3.1\\Task_3_1\\Task_3_1.csproj": {}
+    "c:\\Users\\Radium\\Desktop\\Uni\\OOP\\Task_3.1\\Task_3_1\\Task_3_1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Radium\\Desktop\\Uni\\OOP\\Task_3.1\\Task_3_1\\Task_3_1.csproj": {
+    "c:\\Users\\Radium\\Desktop\\Uni\\OOP\\Task_3.1\\Task_3_1\\Task_3_1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Radium\\Desktop\\Uni\\OOP\\Task_3.1\\Task_3_1\\Task_3_1.csproj",
+        "projectUniqueName": "c:\\Users\\Radium\\Desktop\\Uni\\OOP\\Task_3.1\\Task_3_1\\Task_3_1.csproj",
         "projectName": "Task_3_1",
-        "projectPath": "C:\\Users\\Radium\\Desktop\\Uni\\OOP\\Task_3.1\\Task_3_1\\Task_3_1.csproj",
+        "projectPath": "c:\\Users\\Radium\\Desktop\\Uni\\OOP\\Task_3.1\\Task_3_1\\Task_3_1.csproj",
         "packagesPath": "C:\\Users\\Radium\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Radium\\Desktop\\Uni\\OOP\\Task_3.1\\Task_3_1\\obj\\",
+        "outputPath": "c:\\Users\\Radium\\Desktop\\Uni\\OOP\\Task_3.1\\Task_3_1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Radium\\AppData\\Roaming\\NuGet\\NuGet.Config"

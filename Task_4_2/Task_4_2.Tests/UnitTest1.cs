@@ -89,7 +89,7 @@ namespace SwinAdventure.Tests
         [Test]
         public void Test_ItemIsIdentifiable()
         {
-            // The item should respond to AreYou requests for its identifiers.
+
             Assert.IsTrue(item.AreYou("sword"));
             Assert.IsTrue(item.AreYou("bronze sword"));
         }
@@ -97,7 +97,7 @@ namespace SwinAdventure.Tests
         [Test]
         public void Test_ShortDescription()
         {
-            // The short description should be in the format: "a {name} ({first id})"
+
             string expected = $"a {item.Name} ({item.FirstId})";
             Assert.AreEqual(expected, item.ShortDescription);
         }
@@ -112,8 +112,7 @@ namespace SwinAdventure.Tests
         [Test]
         public void Test_ItemPrivilegeEscalation()
         {
-            // Test that privilege escalation works for an item.
-            // Since Item inherits from IdentifiableObject, it should behave similarly.
+
             var testItem = new Item(new string[] { "007", "James" }, "Test Sword", "A test sword");
             testItem.PrivilegeEscalation("8669");
             Assert.AreEqual("1-13", testItem.FirstId);

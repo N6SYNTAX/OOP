@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0/NwoG2vrsA=",
+  "dgSpecHash": "s7MrKWRz5DY=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Radium\\Desktop\\Uni\\OOP\\Task_3.1\\Task_3_1\\Task_3_1.csproj",
+  "projectFilePath": "c:\\Users\\Radium\\Desktop\\Uni\\OOP\\Task_3.1\\Task_3_1\\Task_3_1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Radium\\.nuget\\packages\\microsoft.codecoverage\\1.0.3\\microsoft.codecoverage.1.0.3.nupkg.sha512",
     "C:\\Users\\Radium\\.nuget\\packages\\microsoft.csharp\\4.0.1\\microsoft.csharp.4.0.1.nupkg.sha512",
