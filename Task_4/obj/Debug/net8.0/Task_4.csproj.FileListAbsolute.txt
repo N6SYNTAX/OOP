@@ -31,3 +31,6 @@ C:\Users\Radium\Desktop\Uni\OOP\Task_4\obj\Debug\net8.0\refint\Task_4.dll
 C:\Users\Radium\Desktop\Uni\OOP\Task_4\obj\Debug\net8.0\Task_4.pdb
 C:\Users\Radium\Desktop\Uni\OOP\Task_4\obj\Debug\net8.0\Task_4.genruntimeconfig.cache
 C:\Users\Radium\Desktop\Uni\OOP\Task_4\obj\Debug\net8.0\ref\Task_4.dll
+C:\Users\sk539\Desktop\OOP25\OOP\Task_4\bin\Debug\net8.0\SplashKitSDK.dll
+C:\Users\sk539\Desktop\OOP25\OOP\Task_4\obj\Debug\net8.0\Task_4.csproj.AssemblyReference.cache
+C:\Users\sk539\Desktop\OOP25\OOP\Task_4\obj\Debug\net8.0\Task_4.csproj.Up2Date

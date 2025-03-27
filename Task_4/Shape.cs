@@ -14,15 +14,12 @@ namespace Task_4
         private int _width;
         private int _height;
 
-        public Color Color
-        {
-            get { return _color; }
-            set { _color = value; }
-        }
+
 
 
         public Shape(int param)
         {
+            //_color = col;
             Color = SplashKit.ColorChocolate();
 
             // Initialize position and size
@@ -59,6 +56,11 @@ namespace Task_4
 
         // Add properties
 
+        public Color Color
+        {
+            get { return _color; }
+            set { _color = value; }
+        }
         public float X
         {
             get { return _x; }

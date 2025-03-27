@@ -30,18 +30,32 @@ namespace SwinAdventure
             _items.Add(itm);
         }
 
+        public Item? FirstItem()
+        {
+            /*          Item val = val;
+                        if (val.Fetch(_items[0].FirstId) != null)
+                        {
+                            return val;
+                        }
+                        else
+                        {
+                            return null;
+                        }
+            */
+            if (_items.Count > 0)
+            {
+                return _items[0];
+            }
+            else
+            {
+                return null;
+            }
+        }
+
 
         public Item? Take(string id)
         {
-            Item? found = null;
-            foreach (Item item in _items)
-            {
-                if (item.AreYou(id))
-                {
-                    found = item;
-                    break;
-                }
-            }
+            Item found = Fetch(id);
             if (found != null)
             {
                 _items.Remove(found);

@@ -14,6 +14,8 @@ namespace SwinAdventure
             Item Sheild = new Item(new string[] { "S" }, "Wooden Shield", "Will protect you... I guess");
 
             Console.WriteLine(Apple.ShortDescription);
+            Console.WriteLine(Apple.FirstId);
+
 
             Inventory Player1 = new Inventory();
             Console.WriteLine(Player1.ItemList);
@@ -24,6 +26,8 @@ namespace SwinAdventure
             Player1.Put(Sheild);
             Player1.Take("w");
             Console.WriteLine(Player1.ItemList);
+            Console.WriteLine(Player1.FirstItem().FirstId);
+
         }
     }
 }

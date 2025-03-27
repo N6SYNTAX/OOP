@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Radium\\Desktop\\Uni\\OOP\\Task_4_2\\Task_4_2\\Task_4_2.csproj": {}
+    "C:\\Users\\sk539\\Desktop\\OOP25\\OOP\\Task_4_2\\Task_4_2\\Task_4_2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Radium\\Desktop\\Uni\\OOP\\Task_4_2\\Task_4_2\\Task_4_2.csproj": {
+    "C:\\Users\\sk539\\Desktop\\OOP25\\OOP\\Task_4_2\\Task_4_2\\Task_4_2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Radium\\Desktop\\Uni\\OOP\\Task_4_2\\Task_4_2\\Task_4_2.csproj",
+        "projectUniqueName": "C:\\Users\\sk539\\Desktop\\OOP25\\OOP\\Task_4_2\\Task_4_2\\Task_4_2.csproj",
         "projectName": "Task_4_2",
-        "projectPath": "C:\\Users\\Radium\\Desktop\\Uni\\OOP\\Task_4_2\\Task_4_2\\Task_4_2.csproj",
-        "packagesPath": "C:\\Users\\Radium\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Radium\\Desktop\\Uni\\OOP\\Task_4_2\\Task_4_2\\obj\\",
+        "projectPath": "C:\\Users\\sk539\\Desktop\\OOP25\\OOP\\Task_4_2\\Task_4_2\\Task_4_2.csproj",
+        "packagesPath": "C:\\Users\\sk539\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\sk539\\Desktop\\OOP25\\OOP\\Task_4_2\\Task_4_2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Radium\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\sk539\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"

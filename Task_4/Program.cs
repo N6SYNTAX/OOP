@@ -8,7 +8,8 @@ namespace Task_4
         public static void Main()
         {
             Window window = new Window("Shape Drawer", 800, 600);
-            Shape myShape = new Shape(669);
+            Shape myShape = new Shape(69);
+            myShape.Color = Color.Red;
 
             do
             {
