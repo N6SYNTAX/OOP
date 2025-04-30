@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "K9F7w0YIB/E=",
+  "dgSpecHash": "i2hH4IyYpPk=",
   "success": true,
-  "projectFilePath": "C:\\Users\\radium\\desktop\\uni\\oop\\TASK_5_1\\Task_4.csproj",
+  "projectFilePath": "C:\\Users\\Radium\\Desktop\\Uni\\OOP\\Task_5_1\\Task_4.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Radium\\.nuget\\packages\\splashkit\\1.2.9\\splashkit.1.2.9.nupkg.sha512"
   ],

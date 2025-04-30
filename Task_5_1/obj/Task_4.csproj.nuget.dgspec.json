@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\radium\\desktop\\uni\\oop\\TASK_5_1\\Task_4.csproj": {}
+    "C:\\Users\\Radium\\Desktop\\Uni\\OOP\\Task_5_1\\Task_4.csproj": {}
   },
   "projects": {
-    "C:\\Users\\radium\\desktop\\uni\\oop\\TASK_5_1\\Task_4.csproj": {
+    "C:\\Users\\Radium\\Desktop\\Uni\\OOP\\Task_5_1\\Task_4.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\radium\\desktop\\uni\\oop\\TASK_5_1\\Task_4.csproj",
+        "projectUniqueName": "C:\\Users\\Radium\\Desktop\\Uni\\OOP\\Task_5_1\\Task_4.csproj",
         "projectName": "Task_4",
-        "projectPath": "C:\\Users\\radium\\desktop\\uni\\oop\\TASK_5_1\\Task_4.csproj",
+        "projectPath": "C:\\Users\\Radium\\Desktop\\Uni\\OOP\\Task_5_1\\Task_4.csproj",
         "packagesPath": "C:\\Users\\Radium\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\radium\\desktop\\uni\\oop\\TASK_5_1\\obj\\",
+        "outputPath": "C:\\Users\\Radium\\Desktop\\Uni\\OOP\\Task_5_1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Radium\\AppData\\Roaming\\NuGet\\NuGet.Config"
