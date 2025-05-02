@@ -26,7 +26,7 @@ namespace SwinAdventure
         {
             if (AreYou(id))
             {
-                Console.WriteLine("Success");
+                //Console.WriteLine("Success");
                 return this;
 
             }
@@ -47,8 +47,8 @@ namespace SwinAdventure
         public override void SaveTo(StreamWriter writer)
         {
             base.SaveTo(writer);
-            writer.WriteLine(_inventory.ItemList);
 
+            writer.WriteLine(Inventory.ItemList);
         }
 
         public override void LoadFrom(StreamReader reader)
@@ -61,7 +61,7 @@ namespace SwinAdventure
             Console.WriteLine(Name);
             Console.WriteLine(ShortDescription);
             Console.WriteLine(ItemDescriptionList);
-        }
 
+        }
     }
 }

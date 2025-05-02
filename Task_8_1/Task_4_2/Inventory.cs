@@ -93,21 +93,48 @@ namespace SwinAdventure
 
                 return list;
 
-                /*
-                string ItmList = "";
-                foreach (Item item in _items)
-                {
-                    ItmList += item.Name + "\n\t" + item.ShortDescription + "\n";
-                }
 
-                if (ItmList == "")
-                {
-                    Console.WriteLine("Inventory Empty!");
-                }
-                return ItmList;
-                */
+                // string ItmList = "";
+                // foreach (Item item in _items)
+                // {
+                //     ItmList += item.FirstId + item.Name + "\n\t" + item.ShortDescription + "\n";
+                // }
+
+                // if (ItmList == "")
+                // {
+                //     Console.WriteLine("Inventory Empty!");
+                // }
+                // return ItmList;
+
             }
         }
+
+
+        // public void LoadFrom(StreamReader reader)
+        // {
+
+        //     base.LoadFrom(reader);
+        //     string ItemDescriptionList = reader.ReadLine();
+
+        //     //display the information to Console
+        //     Console.WriteLine("Player information");
+        //     Console.WriteLine(Name);
+        //     Console.WriteLine(ShortDescription);
+        //     Console.WriteLine(ItemDescriptionList);
+        // }
+
+        // public void LoadFrom(StreamReader reader)
+        // {
+        //     var line = reader.ReadLine();
+        //     if (line == null) return;
+        //     foreach (l)
+        //     {
+        //         var p = part.Trim();
+        //         var s = p.LastIndexOf('(');
+        //         var e = p.LastIndexOf(')');
+        //         var id = (s >= 0 && e > s) ? p.Substring(s + 1, e - s - 1) : p;
+        //         _items.Add(new Item(new[] { id }, id, ""));
+        //     }
 
     }
 }

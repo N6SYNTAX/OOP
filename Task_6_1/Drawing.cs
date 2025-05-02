@@ -113,6 +113,10 @@ namespace Task_4
                         case "Line":
                             s = new MyLine();
                             break;
+                        case "Ellipse":
+                            s = new MyEllipse();
+                            break;
+
                         default:
                             throw new InvalidDataException("Unkown Shape Kind" + kind);
                     }

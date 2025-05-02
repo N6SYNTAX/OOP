@@ -8,7 +8,7 @@ namespace SwinAdventure
     {
         public static void Main()
         {
-            Console.WriteLine("Hello World!");
+
 
             Player _testPlayer;
             _testPlayer = new Player("James", "an explorer");
@@ -22,18 +22,21 @@ namespace SwinAdventure
 
 
             //Print the player Identifiers
-            Console.WriteLine(_testPlayer.AreYou("me"));
-            Console.WriteLine(_testPlayer.AreYou("inventory"));
+            // Console.WriteLine(_testPlayer.AreYou("me"));
+            // Console.WriteLine(_testPlayer.AreYou("inventory"));
 
-            if (_testPlayer.Locate("light") != null)
-            {
-                Console.WriteLine("The object torch exists");
-                Console.WriteLine(_testPlayer.Inventory.HasItem("light"));
-            }
-            else
-            {
-                Console.WriteLine("The object torch does not exist");
-            }
+            // if (_testPlayer.Locate("light") != null)
+            // {
+            //     Console.WriteLine("The object torch exists");
+            //     Console.WriteLine(_testPlayer.Inventory.HasItem("light"));
+            // }
+            // else
+            // {
+            //     Console.WriteLine("The object torch does not exist");
+            // }
+
+
+
 
             //write the PlayerObject to file
             StreamWriter writer = new StreamWriter("TestPlayer.txt");

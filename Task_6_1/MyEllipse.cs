@@ -4,18 +4,18 @@ using System.IO;
 
 namespace Task_4
 {
-    public class MyRectangle : Shape
+    public class MyEllipse : Shape
     {
         private int _width;
         private int _height;
 
 
-        public MyRectangle() : this(SplashKit.ColorGreen(), 0.0f, 0.0f, 100 + 69, 100 + 69)
+        public MyEllipse() : this(SplashKit.ColorGreen(), 0.0f, 0.0f, 100 + 69, 100 + 69)
         {
         }
 
         // Constructor with parameters.
-        public MyRectangle(Color color, float x, float y, int width, int height)
+        public MyEllipse(Color color, float x, float y, int width, int height)
             : base(color)
         {
             X = x;
@@ -40,10 +40,7 @@ namespace Task_4
 
         public override void Draw()
         {
-
-
-
-            SplashKit.FillRectangle(Color, X - (_width / 2.0f), Y - (_height / 2.0f), _width, _height);
+            SplashKit.FillEllipse(Color, X, Y, _width, _height);
             if (Selected)
             {
                 DrawOutline();
@@ -54,12 +51,14 @@ namespace Task_4
         public override void DrawOutline()
         {
             int extra = 5;
-            SplashKit.DrawRectangle(SplashKit.ColorBlack(), X - extra, Y - extra, _width + 2 * extra, _height + 2 * extra);
+
+            SplashKit.DrawEllipse(SplashKit.ColorBlack(), X - 1.5, Y - 1.5, _width + extra, _height + extra);
+
         }
 
         public override void SaveTo(StreamWriter writer)
         {
-            writer.WriteLine("Rectangle");
+            writer.WriteLine("Ellipse");
             base.SaveTo(writer);
             writer.WriteLine(_width);
             writer.WriteLine(_height);

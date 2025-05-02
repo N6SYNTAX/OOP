@@ -7,11 +7,11 @@ namespace Task_4
     public class Program
     {
 
-        private enum ShapeKind { Rectangle, Circle, Line }
+        private enum ShapeKind { Rectangle, Circle, Line, Ellipse }
 
         public static void Main()
         {
-            Window window = new Window("Shape Drawer - Multiple Shape Kinds", 800, 600);
+            Window window = new Window("Shape Drawer", 800, 600);
             Drawing myDrawing = new Drawing();
 
 
@@ -34,6 +34,10 @@ namespace Task_4
                 {
                     kindToAdd = ShapeKind.Line;
                 }
+                if (SplashKit.KeyTyped(KeyCode.EKey))
+                {
+                    kindToAdd = ShapeKind.Ellipse;
+                }
 
 
                 if (SplashKit.MouseClicked(MouseButton.LeftButton))
@@ -55,6 +59,10 @@ namespace Task_4
                         case ShapeKind.Line:
 
                             newShape = new MyLine(SplashKit.ColorRed(), mouseX, mouseY, mouseX + 100, mouseY + 100);
+                            break;
+                        case ShapeKind.Ellipse:
+
+                            newShape = new MyEllipse(SplashKit.RandomColor(), mouseX, mouseY, 100, 200);
                             break;
                     }
 
@@ -88,14 +96,14 @@ namespace Task_4
 
                 if (SplashKit.KeyTyped(KeyCode.SKey))
                 {
-                    var path = @"C:\Users\sk539\Desktop\TestDrawing.txt";
+                    var path = "C:/Users/sk539/Desktop/TestDrawing.txt";
                     myDrawing.Save(path);
                     Console.WriteLine($"Drawing saved to {path}");
                 }
 
                 if (SplashKit.KeyTyped(KeyCode.OKey))
                 {
-                    var path = @"C:\Users\sk539\Desktop\TestDrawing.txt";
+                    var path = "C:/Users/sk539/Desktop/TestDrawing.txt";
                     myDrawing.Load(path);
                     Console.WriteLine($"Drawing loaded from {path}");
                 }
@@ -111,6 +119,8 @@ namespace Task_4
                         Console.Error.WriteLine("Error Loading File: {0}", e.Message);
                     }
                 }
+
+
 
 
                 myDrawing.Draw();
