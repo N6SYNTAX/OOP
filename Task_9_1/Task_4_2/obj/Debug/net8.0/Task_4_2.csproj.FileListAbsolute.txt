@@ -119,10 +119,7 @@ C:\Users\Radium\Desktop\Repos\OOP\Task_9_1\Task_4_2\obj\Debug\net8.0\Task_4_2.pd
 C:\Users\Radium\Desktop\Repos\OOP\Task_9_1\Task_4_2\obj\Debug\net8.0\Task_4_2.genruntimeconfig.cache
 C:\Users\Radium\Desktop\Repos\OOP\Task_9_1\Task_4_2\obj\Debug\net8.0\ref\Task_4_2.dll
 C:\Users\sk539\Desktop\repos\OOP25\OOP\Task_9_1\Task_4_2\bin\Debug\net8.0\Task_4_2.exe
-C:\Users\sk539\Desktop\repos\OOP25\OOP\Task_9_1\Task_4_2\bin\Debug\net8.0\Task_4_2.deps.json
-C:\Users\sk539\Desktop\repos\OOP25\OOP\Task_9_1\Task_4_2\bin\Debug\net8.0\Task_4_2.runtimeconfig.json
 C:\Users\sk539\Desktop\repos\OOP25\OOP\Task_9_1\Task_4_2\bin\Debug\net8.0\Task_4_2.dll
-C:\Users\sk539\Desktop\repos\OOP25\OOP\Task_9_1\Task_4_2\bin\Debug\net8.0\Task_4_2.pdb
 C:\Users\sk539\Desktop\repos\OOP25\OOP\Task_9_1\Task_4_2\obj\Debug\net8.0\Task_4_2.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\sk539\Desktop\repos\OOP25\OOP\Task_9_1\Task_4_2\obj\Debug\net8.0\Task_4_2.AssemblyInfoInputs.cache
 C:\Users\sk539\Desktop\repos\OOP25\OOP\Task_9_1\Task_4_2\obj\Debug\net8.0\Task_4_2.AssemblyInfo.cs
@@ -131,5 +128,3 @@ C:\Users\sk539\Desktop\repos\OOP25\OOP\Task_9_1\Task_4_2\obj\Debug\net8.0\Task_4
 C:\Users\sk539\Desktop\repos\OOP25\OOP\Task_9_1\Task_4_2\obj\Debug\net8.0\Task_4_2.dll
 C:\Users\sk539\Desktop\repos\OOP25\OOP\Task_9_1\Task_4_2\obj\Debug\net8.0\refint\Task_4_2.dll
 C:\Users\sk539\Desktop\repos\OOP25\OOP\Task_9_1\Task_4_2\obj\Debug\net8.0\Task_4_2.pdb
-C:\Users\sk539\Desktop\repos\OOP25\OOP\Task_9_1\Task_4_2\obj\Debug\net8.0\Task_4_2.genruntimeconfig.cache
-C:\Users\sk539\Desktop\repos\OOP25\OOP\Task_9_1\Task_4_2\obj\Debug\net8.0\ref\Task_4_2.dll

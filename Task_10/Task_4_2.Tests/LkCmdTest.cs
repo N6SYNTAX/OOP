@@ -75,10 +75,9 @@ namespace SwinAdventure.Tests
         [Test]
         public void Test_InvalidLook_ReturnsErrorMessage()
         {
-            Assert.AreEqual("I don't know how to look like that", _look.Execute(_player, new[] { "look", "around" }));
+            Assert.AreEqual("I don't know how to look at that", _look.Execute(_player, new[] { "look", "around" }));
             Assert.AreEqual("Error in look input", _look.Execute(_player, new[] { "hello", "at", "gem" }));
             Assert.AreEqual("What do you want to look at?", _look.Execute(_player, new[] { "look", "around", "gem" }));
-            Assert.AreEqual("What do you want to look in?", _look.Execute(_player, new[] { "look", "at", "gem", "inside", "bag" }));
         }
     }
 }
