@@ -4,9 +4,15 @@ namespace SwinAdventure
     public class Path : IdentifiableObject
     {
 
-        public Path(string[] ids)
+        private string location;
+        private string desc;
+
+
+        public Path(string[] ids, string _location, string _desc)
              : base(ids)
         {
+            _location = location;
+            _desc = desc;
         }
 
         public string BackStory
@@ -17,6 +23,25 @@ namespace SwinAdventure
             }
         }
 
+         public string Hole
+        {
+            get
+            {
+                return $"\n*THUMP* you slide down a long worming hole and land flat on your back in what appears to be a caveren with several paths leading away from you. You look back up at the hole you fell through, and there is no way back up";
+        }
+        }
+
+        public string Description
+        {
+            get
+            {
+                desc;
+            }
+        }
+
     }
+
 }
+
+
 

@@ -20,6 +20,11 @@ namespace SwinAdventure
             }
         }
 
+               public void Put(Path path)
+        {
+            _paths.Add(path);
+        }
+
 
     }
 }

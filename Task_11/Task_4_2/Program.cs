@@ -23,8 +23,13 @@ namespace SwinAdventure
 
             var look = new LookCommand();
 
-            var Main = new Path(new[] { "1" });
-            Console.WriteLine(Main.BackStory);
+            
+            
+            var P1 = new Path(new[]{"1"}, "NSE", "You are standing on a narrow ledge, you peer off and there is nothing but darkness below");
+            Console.WriteLine(P1.BackStory);
+            Console.WriteLine(P1.Hole);
+            Console.WriteLine(P1.Description);
+
 
             while (true)
             {
