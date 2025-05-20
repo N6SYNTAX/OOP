@@ -1,65 +1,68 @@
 using System;
 namespace SwinAdventure
 {
-    public class Location : GameObject
+    public class Location : GameObject, IHaveInventory
     {
 
-        private Inventory _inventory;
+        private List<Path> _paths;
 
-        public Location(string[] ids, string name, string desc) : base(ids, name, desc)
+
+        public Location()
         {
-            _inventory = new Inventory();
+            _paths = new List<Path>();
+
         }
 
-        public Inventory Inventory
+
+        Inventory
+
+        public bool HasPath(string id)
+        {
+            foreach (Path p in _paths)
+            {
+                if (p.AreYou(id))
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        public void AddPath(Path p)
+        {
+            _paths.Add(p);
+        }
+
+        public Path? Fetch(string id)
+        {
+            foreach (Path p in _paths)
+            {
+                if (p.AreYou(id))
+                {
+                    return p;
+                }
+            }
+
+            return null;
+        }
+
+        public string WorldMap
         {
             get
             {
-                return _inventory;
+                string list = "";
+
+                List<string> Map = new List<string>();
+                foreach (Path p in _paths)
+                {
+                    Map.Add(p.Description);
+                }
+                list = string.Join(",", Map);
+                return list;
+
             }
         }
 
-
-        public GameObject Locate(string id)
-        {
-            if (AreYou(id))
-            {
-                return this;
-            }
-            else
-            {
-                return Inventory.Fetch(id);
-            }
-        }
-
-        public override string FullDescription
-        {
-            get
-            {
-                string nameDescription;
-                string inventoryDescription;
-
-                if (Name != null && Name != "")
-                {
-                    nameDescription = Name;
-                }
-                else
-                {
-                    nameDescription = "an unknown location";
-                }
-                if (_inventory != null && _inventory.ItemList != null)
-                {
-                    inventoryDescription = _inventory.ItemList;
-                }
-                else
-                {
-                    inventoryDescription = "there are no items at this location";
-                }
-                return "You are in " + nameDescription + ". " +
-                        base.FullDescription +
-                        "\n Here,  you can see:\n" + inventoryDescription;
-            }
-        }
 
     }
 }

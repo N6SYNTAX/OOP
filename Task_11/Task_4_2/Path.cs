@@ -1,18 +1,24 @@
 using System;
+using System.Runtime.CompilerServices;
 namespace SwinAdventure
 {
     public class Path : IdentifiableObject
     {
 
-        private string location;
-        private string desc;
+        private Location _destination;
+        private string _peak;
+        private string _desc;
+        private bool _unlock;
 
 
-        public Path(string[] ids, string _location, string _desc)
+        public Path(string[] ids, Location destination, string peak, string desc, bool unlock)
              : base(ids)
         {
-            _location = location;
+            _destination = destination;
+            _peak = peak;
             _desc = desc;
+            _unlock = unlock;
+
         }
 
         public string BackStory
@@ -23,19 +29,19 @@ namespace SwinAdventure
             }
         }
 
-         public string Hole
+        public string Peak
         {
             get
             {
-                return $"\n*THUMP* you slide down a long worming hole and land flat on your back in what appears to be a caveren with several paths leading away from you. You look back up at the hole you fell through, and there is no way back up";
-        }
+                return _peak;
+            }
         }
 
         public string Description
         {
             get
             {
-                desc;
+                return _desc;
             }
         }
 
