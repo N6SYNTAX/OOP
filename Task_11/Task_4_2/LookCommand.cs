@@ -6,11 +6,6 @@ namespace SwinAdventure
         public LookCommand() : base(new[] { "look" }) { }
 
 
-        public override string ExecutePeak(Location l, string[] text)
-        {
-           // if (text.Length)
-        }
-
         public override string Execute(Player p, string[] text)
         {
             if (text.Length != 3 && text.Length != 5) return "I don't know how to look at that";

@@ -1,17 +1,42 @@
 using System;
 namespace SwinAdventure
 {
-    public class Location : GameObject, IHaveInventory
+    public class Location : GameObject, IHaveInventory, Inventory
     {
 
-        private List<Path> _paths;
+        private Inventory _paths;
         private string _desc;
 
-        public Location(string desc)
+        public Location(string[] ids, string name, string desc)
+            : base(ids, name, desc)
         {
-            _paths = new List<Path>();
+            _paths = new Inventory();
             _desc = desc;
         }
+
+
+        public Inventory Paths
+        {
+            get
+            {
+                return _paths;
+            }
+        }
+
+         public GameObject Locate(string id)
+        {
+            if (AreYou(id))
+            {
+                //Console.WriteLine("Success");
+                return this;
+
+            }
+            else
+            {
+                return Paths.Fetch(id);
+            }
+        }
+
 
 
         public string FullDescription
@@ -22,52 +47,54 @@ namespace SwinAdventure
             }
         }
 
-        public bool HasPath(string id)
-        {
-            foreach (Path p in _paths)
-            {
-                if (p.AreYou(id))
-                {
-                    return true;
-                }
-            }
-            return false;
-        }
-
-        public void AddPath(Path p)
+       public override void Put(Path p)
         {
             _paths.Add(p);
         }
 
-        public Path? Fetch(string id)
-        {
-            foreach (Path p in _paths)
-            {
-                if (p.AreYou(id))
-                {
-                    return p;
-                }
-            }
+        // public bool HasPath(string id)
+        // {
+        //     foreach (Path p in _paths)
+        //     {
+        //         if (p.AreYou(id))
+        //         {
+        //             return true;
+        //         }
+        //     }
+        //     return false;
+        // }
 
-            return null;
-        }
+ 
 
-        public string WorldMap
-        {
-            get
-            {
-                string list = "";
+        // public Path? Fetch(string id)
+        // {
+        //     foreach (Path p in _paths)
+        //     {
+        //         if (p.AreYou(id))
+        //         {
+        //             return p;
+        //         }
+        //     }
 
-                List<string> Map = new List<string>();
-                foreach (Path p in _paths)
-                {
-                    Map.Add(p.Description);
-                }
-                list = string.Join(",", Map);
-                return list;
+        //     return null;
+        // }
 
-            }
-        }
+        // public string WorldMap
+        // {
+        //     get
+        //     {
+        //         string list = "";
+
+        //         List<string> Map = new List<string>();
+        //         foreach (Path p in _paths)
+        //         {
+        //             Map.Add(p.FullDescription);
+        //         }
+        //         list = string.Join(",", Map);
+        //         return list;
+
+        //     }
+        // }
 
 
     }

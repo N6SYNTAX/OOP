@@ -6,6 +6,6 @@ namespace SwinAdventure
     {
         protected Command(string[] ids) : base(ids) { }
         public abstract string Execute(Player p, string[] text);
-        public abstract string ExecutePeak(Location L, string[] text);
+        
     }
 }
