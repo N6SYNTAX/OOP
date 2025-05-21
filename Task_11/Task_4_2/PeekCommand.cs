@@ -6,20 +6,17 @@ namespace SwinAdventure
         public PeekCommand() : base(new[] { "peek" }) { }
 
 
-        public override bool Execute(Player player, string[] words)
-    {
-        if (words.Length < 2) return false;
-
-        // look up a path from your current location
-        var thing = player.Location.Locate(words[1]);
-        if (thing is Path p)
+        public override string Execute(Player player, string[] words)
         {
-            Console.WriteLine(p.Peek);
-            return true;
-        }
+            if (words.Length < 2)
+            return "Peek where?";
 
-        Console.WriteLine("You can't peek at " + words[1]);
-        return true;
-    }
+            var thing = player.CurrentLocation.Locate(words[1]);
+            if (thing is Path p)
+            return p.Peek;
+
+            return $"You can't peek at {words[1]}.";
+}
+
 }
 }

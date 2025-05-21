@@ -6,30 +6,18 @@ public class MoveCommand : Command
     public MoveCommand() 
         : base(new[] { "move", "go" }) { }
 
-    public override bool Execute(Player player, string[] words)
-    {
-        if (words.Length < 2)
-        {
-            Console.WriteLine("Move where?");
-            return false;
-        }
+    public override string Execute(Player player, string[] words)
+{
+  if (words.Length < 2)
+    return "Move where?";
 
-        var direction = words[1];
-        // Try to fetch a Path from the player's current Location
-        var path = player.Location.Fetch(direction);
-        if (path == null)
-        {
-            Console.WriteLine($"You can't go {direction}.");
-            return false;
-        }
+  var direction = words[1];
+  var path = player.Location.Fetch(direction);
+  if (path == null)
+    return $"You can't go {direction}.";
 
-        // Move the player
-        player.Location = path.Destination;
+  player.Location = path.Destination;
+  return path.FullDescription + "\n" + player.Location.FullDescription;
+}
 
-        // Describe what they see as they go
-        Console.WriteLine(path.FullDescription);
-        Console.WriteLine(player.Location.FullDescription);
-
-        return true;
-    }
 }

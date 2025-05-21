@@ -25,7 +25,7 @@ namespace SwinAdventure
             return false;
         }
 
-        public void Put(Item itm)
+        public virtual  void Put(Item itm)
         {
             _items.Add(itm);
         }

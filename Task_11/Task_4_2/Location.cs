@@ -1,7 +1,7 @@
 using System;
 namespace SwinAdventure
 {
-    public class Location : GameObject, IHaveInventory, Inventory
+    public class Location : Item, IHaveInventory
     {
 
         private Inventory _paths;
@@ -39,7 +39,7 @@ namespace SwinAdventure
 
 
 
-        public string FullDescription
+        public override string FullDescription
         {
             get
             {
@@ -47,10 +47,10 @@ namespace SwinAdventure
             }
         }
 
-       public override void Put(Path p)
-        {
-            _paths.Add(p);
-        }
+    //    public void Put(Path p)
+    //     {
+    //         _paths.Put(p);
+    //     }
 
         // public bool HasPath(string id)
         // {
