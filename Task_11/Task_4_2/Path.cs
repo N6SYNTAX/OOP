@@ -37,7 +37,7 @@ namespace SwinAdventure
             }
         }
 
-        public string Description
+        public string FullDescription
         {
             get
             {

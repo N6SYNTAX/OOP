@@ -36,14 +36,14 @@ namespace SwinAdventure
             Console.WriteLine(Hole.Description);
 
 
-            // while (true)
-            // {
-            //     Console.Write("Command -> ");
-            //     var line = Console.ReadLine();
-            //     if (line == "quit") break;
-            //     var words = line.Split(' ', StringSplitOptions.RemoveEmptyEntries);
-            //     Console.WriteLine(look.Execute(player, words));
-            // }
+            while (true)
+            {
+                Console.Write("Command -> ");
+                var line = Console.ReadLine();
+                if (line == "quit") break;
+                var words = line.Split(' ', StringSplitOptions.RemoveEmptyEntries);
+                Console.WriteLine(look.Execute(player, words));
+            }
         }
     }
 }

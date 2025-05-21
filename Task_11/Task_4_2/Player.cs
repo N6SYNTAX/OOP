@@ -6,12 +6,14 @@ namespace SwinAdventure
     public class Player : GameObject, IHaveInventory
     {
         private Inventory _inventory; // This specific players inventory
+        private Location _location; // players current location updated by move command
 
         public Player(string name, string desc)
         // passing up identifiers me and inventory
             : base(new string[] { "me", "inventory" }, name, desc)
         {
             _inventory = new Inventory();
+            _location = Opening;
         }
 
         public Inventory Inventory
@@ -19,6 +21,19 @@ namespace SwinAdventure
             get
             {
                 return _inventory;
+            }
+        }
+
+
+        public Location Location
+        {
+            get
+            {
+                return _location;
+            }
+            set
+            {
+                return _location = value;
             }
         }
 

@@ -5,16 +5,22 @@ namespace SwinAdventure
     {
 
         private List<Path> _paths;
+        private string _desc;
 
-
-        public Location()
+        public Location(string desc)
         {
             _paths = new List<Path>();
-
+            _desc = desc;
         }
 
 
-        Inventory
+        public string FullDescription
+        {
+            get
+            {
+                return _desc;
+            }
+        }
 
         public bool HasPath(string id)
         {
