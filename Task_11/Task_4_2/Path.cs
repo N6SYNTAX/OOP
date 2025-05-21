@@ -41,7 +41,7 @@ namespace SwinAdventure
         public Location Destination 
         {
             get{
-                return _destination
+                return _destination;
             }
         }
 

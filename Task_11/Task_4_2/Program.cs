@@ -37,6 +37,15 @@ namespace SwinAdventure
 //
 
             var look = new LookCommand();
+            var peek = new PeekCommand();
+            var move = new MoveCommand();
+            var commands = new List<Command>
+            {
+            new LookCommand(),
+            new MoveCommand(),
+            new PeekCommand(),
+            };
+
 
 
 // 
