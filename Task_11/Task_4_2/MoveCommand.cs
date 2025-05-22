@@ -6,7 +6,7 @@ public class MoveCommand : Command
     public MoveCommand() 
         : base(new[] { "move", "go" }) { }
 
-    public override string Execute(Player player, string[] words)
+public override string Execute(Player player, string[] words)
 {
   if (words.Length < 2)
     return "Move where?";

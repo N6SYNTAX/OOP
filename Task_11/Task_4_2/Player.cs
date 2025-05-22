@@ -13,9 +13,11 @@ namespace SwinAdventure
             : base(new string[] { "me", "inventory" }, name, desc)
         {
             _inventory = new Inventory();
-            
-           // var Default = new Location(new[] {"default"}, "Default", $"You are \nYou are standing at the base of an old weatherd tree,\nwith long twisting knots spanning the entire length of the trunk.\nAt the base of the door you notice an overgrown door with vines and tree growth partially covering.\nWould you like to proceed through the door?");
+            var Default = new Location(new[] { "default" }, "Forest", $"You are \nYou are standing at the base of an old weatherd tree,\nwith long twisting knots spanning the entire length of the trunk.\nAt the base of the door you notice an overgrown door with vines and tree growth partially covering.\nWould you like to proceed through the door?");
             _location = Default;
+
+
+
         }
 
         public Inventory Inventory
@@ -27,7 +29,7 @@ namespace SwinAdventure
         }
 
 
-        public Location CurrentLocation
+        public Location Location
         {
             get
             {
@@ -35,7 +37,7 @@ namespace SwinAdventure
             }
             set
             {
-                return _location = value;
+                _location = value;
             }
         }
 
@@ -45,14 +47,16 @@ namespace SwinAdventure
             {
                 //Console.WriteLine("Success");
                 return this;
-
             }
-            else
+            var item = Inventory.Fetch(id);
+            if (item != null)
             {
-                return Inventory.Fetch(id);
+                return item;
             }
-        }
 
+            return Location.Locate(id);
+
+        }
         public override string FullDescription
         {
             get

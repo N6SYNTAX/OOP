@@ -8,9 +8,22 @@ namespace SwinAdventure
 
         public override string Execute(Player p, string[] text)
         {
-            if (text.Length != 3 && text.Length != 5) return "I don't know how to look at that";
-            if (!AreYou(text[0])) return "Error in look input";
-            if (text[1] != "at") return "What do you want to look at?";
+            if (text.Length == 1)
+            {
+                return p.Location.FullDescription;
+            }
+            if (text.Length != 3 && text.Length != 5)
+            {
+                return "I don't know how to look at that";
+            }
+            if (!AreYou(text[0]))
+            {
+                return "Error in look input";
+            }
+            if (text[1] != "at")
+            {
+                return "What do you want to look at?";
+            }
             IHaveInventory container = text.Length == 3
                 ? p
                 : FetchContainer(p, text[4]);
@@ -23,6 +36,8 @@ namespace SwinAdventure
             var obj = p.Locate(containerId);
             return obj as IHaveInventory;
         }
+
+
 
         private string LookAtIn(string thingId, IHaveInventory container)
         {

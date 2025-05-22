@@ -9,14 +9,14 @@ namespace SwinAdventure
         public override string Execute(Player player, string[] words)
         {
             if (words.Length < 2)
-            return "Peek where?";
+                return "Peek where?";
 
-            var thing = player.CurrentLocation.Locate(words[1]);
+            var thing = player.Location.Fetch(words[1]);
             if (thing is Path p)
-            return p.Peek;
+                return p.Peek;
 
             return $"You can't peek at {words[1]}.";
-}
+        }
 
-}
+    }
 }

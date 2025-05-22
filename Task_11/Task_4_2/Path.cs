@@ -2,7 +2,7 @@ using System;
 using System.Runtime.CompilerServices;
 namespace SwinAdventure
 {
-    public class Path : IdentifiableObject
+    public class Path : GameObject
     {
 
         private Location _destination;
@@ -11,8 +11,8 @@ namespace SwinAdventure
         private bool _unlock;
 
 
-        public Path(string[] ids, Location destination, string peek, string desc, bool unlock)
-             : base(ids)
+        public Path(string[] ids, Location destination, string name, string peek, string desc, bool unlock)
+             : base(ids, name, desc)
         {
             _destination = destination;
             _peek = peek;
@@ -30,7 +30,7 @@ namespace SwinAdventure
             }
         }
 
-        public string FullDescription
+        public override string FullDescription
         {
             get
             {
@@ -38,9 +38,10 @@ namespace SwinAdventure
             }
         }
 
-        public Location Destination 
+        public Location Destination
         {
-            get{
+            get
+            {
                 return _destination;
             }
         }

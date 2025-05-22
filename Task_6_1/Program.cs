@@ -7,7 +7,7 @@ namespace Task_4
     public class Program
     {
 
-        private enum ShapeKind { Rectangle, Circle, Line, Ellipse }
+        private enum ShapeKind { Rectangle, Circle, Line, Ellipse, Sword }
 
         public static void Main()
         {
@@ -38,6 +38,10 @@ namespace Task_4
                 {
                     kindToAdd = ShapeKind.Ellipse;
                 }
+                if (SplashKit.KeyTyped(KeyCode.QKey))
+                {
+                    kindToAdd = ShapeKind.Sword;
+                }
 
 
                 if (SplashKit.MouseClicked(MouseButton.LeftButton))
@@ -63,6 +67,9 @@ namespace Task_4
                         case ShapeKind.Ellipse:
 
                             newShape = new MyEllipse(SplashKit.RandomColor(), mouseX, mouseY, 100, 200);
+                            break;
+                        case ShapeKind.Sword:
+                            newShape = new MySword(SplashKit.RGBColor(169, 169, 169), mouseX, mouseY, mouseX - 100, mouseY - 100);
                             break;
                     }
 
