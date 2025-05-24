@@ -36,7 +36,7 @@ namespace Task_4
 
         public override void Draw()
         {
-            // Calculate sword vector
+            //sword lines
             float dx = _endX - X;
             float dy = _endY - Y;
             float length = (float)Math.Sqrt(dx * dx + dy * dy);
