@@ -7,7 +7,7 @@ namespace Task_4
     public class Program
     {
 
-        private enum ShapeKind { Rectangle, Circle, Line, Ellipse }
+        private enum ShapeKind { Rectangle, Circle, Line, Ellipse, Sword, LetterS }
 
         public static void Main()
         {
@@ -38,6 +38,14 @@ namespace Task_4
                 {
                     kindToAdd = ShapeKind.Ellipse;
                 }
+                if (SplashKit.KeyTyped(KeyCode.QKey))
+                {
+                    kindToAdd = ShapeKind.Sword;
+                }
+                if (SplashKit.KeyTyped(KeyCode.NKey))
+                {
+                    kindToAdd = ShapeKind.LetterS;
+                }
 
 
                 if (SplashKit.MouseClicked(MouseButton.LeftButton))
@@ -64,6 +72,12 @@ namespace Task_4
 
                             newShape = new MyEllipse(SplashKit.RandomColor(), mouseX, mouseY, 100, 200);
                             break;
+                        case ShapeKind.Sword:
+                            newShape = new MySword(SplashKit.RGBColor(169, 169, 169), mouseX, mouseY, mouseX - 100, mouseY - 100);
+                            break;
+                        case ShapeKind.LetterS:
+                            newShape = new MyLetterS(SplashKit.ColorBlack(), 150, 150);
+                            break;
                     }
 
                     if (newShape != null)
@@ -77,6 +91,8 @@ namespace Task_4
                 {
                     myDrawing.Background = SplashKit.RandomColor();
                 }
+
+
 
                 // Right mouse click selects shapes at the mouse pointer.
                 if (SplashKit.MouseClicked(MouseButton.RightButton))
@@ -93,6 +109,29 @@ namespace Task_4
                         myDrawing.RemoveShape(s);
                     }
                 }
+                // if (SplashKit.KeyTyped(KeyCode.RKey))
+                // {
+                //     Random rnd = new Random();
+                //     int shapeCount = rnd.Next(3, 7); // 3 to 6 shapes
+
+                //     for (int i = 0; i < shapeCount; i++)
+                //     {
+                //         Color randomColor = SplashKit.RandomRGBColor(255);
+                //         float x = rnd.Next(800);
+                //         float y = rnd.Next(600);
+                //         int shapeType = rnd.Next(3); // 0 = rect, 1 = circle, 2 = line
+
+                //         switch (shapeType)
+                //         {
+                //             case 0: ShapeKind.Add(new MyRectangle(randomColor, x, y, 60, 40)); break;
+                //             case 1: shapes.Add(new MyCircle(randomColor, x, y, 25)); break;
+                //             case 2: shapes.Add(new MyLine(randomColor, x, y, x + 50, y + 30)); break;
+                //         }
+                //     }
+                // }
+
+
+
 
                 if (SplashKit.KeyTyped(KeyCode.SKey))
                 {

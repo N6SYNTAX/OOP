@@ -116,6 +116,9 @@ namespace Task_4
                         case "Ellipse":
                             s = new MyEllipse();
                             break;
+                        case "Sword":
+                            s = new MySword();
+                            break;
 
                         default:
                             throw new InvalidDataException("Unkown Shape Kind" + kind);
