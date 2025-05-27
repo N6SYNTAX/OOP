@@ -8,19 +8,19 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\sk539\\.nuget\\packages\\": {}
+    "C:\\Users\\Radium\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\sk539\\Desktop\\OOP25\\OOP\\Task_2.1\\Task_2.1.csproj",
+      "projectUniqueName": "C:\\Users\\Radium\\Desktop\\Repos\\OOP\\Task_2.1\\Task_2.1.csproj",
       "projectName": "Task_2.1",
-      "projectPath": "C:\\Users\\sk539\\Desktop\\OOP25\\OOP\\Task_2.1\\Task_2.1.csproj",
-      "packagesPath": "C:\\Users\\sk539\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\sk539\\Desktop\\OOP25\\OOP\\Task_2.1\\obj\\",
+      "projectPath": "C:\\Users\\Radium\\Desktop\\Repos\\OOP\\Task_2.1\\Task_2.1.csproj",
+      "packagesPath": "C:\\Users\\Radium\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Radium\\Desktop\\Repos\\OOP\\Task_2.1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\sk539\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Radium\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -64,16 +64,8 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.406/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.408/PortableRuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file C:\\Users\\sk539\\Desktop\\OOP25\\OOP\\Task_2.1\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  }
 }
