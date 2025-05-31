@@ -7,7 +7,7 @@ namespace Task_4
     public class Program
     {
 
-        private enum ShapeKind { Rectangle, Circle, Line, Ellipse, Sword, LetterS }
+        private enum ShapeKind { Rectangle, Circle, Line, Ellipse, Sword, Name }
 
         public static void Main()
         {
@@ -44,7 +44,7 @@ namespace Task_4
                 }
                 if (SplashKit.KeyTyped(KeyCode.NKey))
                 {
-                    kindToAdd = ShapeKind.LetterS;
+                    kindToAdd = ShapeKind.Name;
                 }
 
 
@@ -75,8 +75,8 @@ namespace Task_4
                         case ShapeKind.Sword:
                             newShape = new MySword(SplashKit.RGBColor(169, 169, 169), mouseX, mouseY, mouseX - 100, mouseY - 100);
                             break;
-                        case ShapeKind.LetterS:
-                            newShape = new MyLetterS(SplashKit.ColorBlack(), 150, 150);
+                        case ShapeKind.Name:
+                            newShape = new MyName(SplashKit.ColorBlack(), 150, 150);
                             break;
                     }
 
@@ -86,7 +86,7 @@ namespace Task_4
                     }
                 }
 
-                // If space key is pressed, change the drawing background to a random color.
+
                 if (SplashKit.KeyTyped(KeyCode.SpaceKey))
                 {
                     myDrawing.Background = SplashKit.RandomColor();
@@ -94,14 +94,13 @@ namespace Task_4
 
 
 
-                // Right mouse click selects shapes at the mouse pointer.
+
                 if (SplashKit.MouseClicked(MouseButton.RightButton))
                 {
                     Point2D pt = SplashKit.MousePosition();
                     myDrawing.SelectShapesAt(pt);
                 }
 
-                // Delete selected shapes if Delete or Backspace is pressed.
                 if (SplashKit.KeyTyped(KeyCode.DeleteKey) || SplashKit.KeyTyped(KeyCode.BackspaceKey))
                 {
                     foreach (Shape s in myDrawing.SelectedShapes)
@@ -109,23 +108,29 @@ namespace Task_4
                         myDrawing.RemoveShape(s);
                     }
                 }
+
+                // If R key typed a random set of shapes drawn
                 if (SplashKit.KeyTyped(KeyCode.RKey))
                 {
+                    // For verification purposes
                     Console.WriteLine("Key R Pressed");
-
+                    // Using C# build in random function
                     Random rnd = new Random();
-
+                    // Generating number of shapes to be drawn
                     int numshape = rnd.Next(0, 20);
 
                     int i = 0;
-
+                    // Loops the number of times generated previously
                     while (i < numshape)
                     {
+                        // Generating rand attributes for shapetype, and x and y position
                         int shapetype = rnd.Next(0, 5);
                         float mouseX = rnd.Next(100, 700);
                         float mouseY = rnd.Next(100, 500);
 
+                        // Instantiating new shape object
                         Shape newShape = null;
+                        // Using a case to print shape depending on the number generated before
                         switch (shapetype)
                         {
                             case 1:
