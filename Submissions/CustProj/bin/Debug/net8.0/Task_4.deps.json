@@ -1,0 +1,41 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Task_4/1.0.0": {
+        "dependencies": {
+          "SplashKit": "1.2.9"
+        },
+        "runtime": {
+          "Task_4.dll": {}
+        }
+      },
+      "SplashKit/1.2.9": {
+        "runtime": {
+          "lib/net8.0/SplashKitSDK.dll": {
+            "assemblyVersion": "1.2.9.0",
+            "fileVersion": "1.2.9.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Task_4/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SplashKit/1.2.9": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-FG7vk258iJD8VnZ3orvyvuOrVg9R6K3+OrDiF6T7r2f14prJy7wDoSHo8pZtrpZdYRqgiRcschFmyczme/JI7A==",
+      "path": "splashkit/1.2.9",
+      "hashPath": "splashkit.1.2.9.nupkg.sha512"
+    }
+  }
+}
